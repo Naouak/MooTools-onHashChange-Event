@@ -11,7 +11,7 @@ authors:
 requires:
 - core/1.2.4:Event
 
-provides: []
+provides: [Element.Events.hashchange]
 */
 Element.Events.hashchange = {
     onAdd: function(){
