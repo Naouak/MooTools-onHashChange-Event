@@ -4,12 +4,9 @@ description: Added the 'hashchange' event
 
 license: MIT-style
 
-authors:
-- sdf1981cgn (https://mootools.lighthouseapp.com/users/71792)
-- Greggory Hernandez
+authors: [sdf1981cgn (https://mootools.lighthouseapp.com/users/71792), Greggory Hernandez]
 
-requires:
-- core/1.2.4:Event
+requires: [core/1.2.4:Event]
 
 provides: [Element.Events.hashchange]
 */
