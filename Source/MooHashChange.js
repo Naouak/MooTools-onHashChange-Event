@@ -12,6 +12,8 @@ requires:
 - core/1.2.4: '*'
 
 provides: [Element.Events.hashchange]
+
+...
 */
 Element.Events.hashchange = {
     onAdd: function(){
