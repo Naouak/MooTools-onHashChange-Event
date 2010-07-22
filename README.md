@@ -1,7 +1,7 @@
 MooTools onHashChange Event
 ===========================
 
-This is a simply script to add the onhashchange event to browsers that don't already support it.
+This is a simple script to add the onhashchange event to browsers that don't already support it.
 
 How to use
 ----------
