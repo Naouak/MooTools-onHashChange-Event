@@ -10,6 +10,8 @@ authors:
 
 requires:
 - core/1.2.4:Event
+
+provides: []
 */
 Element.Events.hashchange = {
     onAdd: function(){
