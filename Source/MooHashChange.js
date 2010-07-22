@@ -1,15 +1,17 @@
 /*
 ---
-description: Added the 'hashchange' event
+description: Added the onhashchange event
 
 license: MIT-style
 
-authors: [sdf1981cgn, Greggory Hernandez]
+authors: 
+- sdf1981cgn
+- Greggory Hernandez
 
 requires: 
-  core/1.2.4: Event
+- core/1.2.4: '*'
 
-provides: Element.Events.hashchange
+provides: [Element.Events.hashchange]
 */
 Element.Events.hashchange = {
     onAdd: function(){
