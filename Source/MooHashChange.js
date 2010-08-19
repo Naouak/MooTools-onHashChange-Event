@@ -17,11 +17,11 @@ provides: [Element.Events.hashchange]
 */
 Element.Events.hashchange = {
     onAdd: function(){
-        var hash = self.location.hash;
+        var hash = window.location.hash;
 
         var hashchange = function(){
-            if (hash == self.location.hash) return;
-            else hash = self.location.hash;
+            if (hash == window.location.hash) return;
+            else hash = window.location.hash;
 
             var value = (hash.indexOf('#') == 0 ? hash.substr(1) : hash);
             window.fireEvent('hashchange', value);
