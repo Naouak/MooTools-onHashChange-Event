@@ -16,21 +16,24 @@ provides: [Element.Events.hashchange]
 ...
 */
 Element.Events.hashchange = {
-    onAdd: function(){
-        var hash = window.location.hash;
+    onAdd: function () {
+    	alert('add');
+        var hash = location.hash;
 
-        var hashchange = function(){
-            if (hash == window.location.hash) return;
-            else hash = window.location.hash;
+        var hashchange = function () {
+        	alert('change');
+            if (hash == location.hash) return;
+            else hash = location.hash;
 
             var value = (hash.indexOf('#') == 0 ? hash.substr(1) : hash);
             window.fireEvent('hashchange', value);
             document.fireEvent('hashchange', value);
         };
 
-        if ("onhashchange" in window){
+        if ("onhashchange" in window) {
             window.onhashchange = hashchange;
-        } else {
+        }
+        else {
             hashchange.periodical(50);
         }
     }

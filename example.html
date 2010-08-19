@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>hashchange example</title>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js"></script>-->
+<script type="text/javascript" src="Source/MooHashChange.js"></script>
+<script type="text/javascript">
+document.addEvent('domready', function () {
+	window.addEvent('hashchange', function (hash) {
+		$('window').set('html', hash);
+	});
+	document.addEvent('hashchange', function (hash) {
+		$('document').set('html', hash);
+	});
+});
+</script>
+</head>
+<body>
+
+<p>
+Both of the divs below should change with the hash.  The first watches for the hashchange event on the window and the second watchs on the document.
+</p>
+
+<div id="window">start</div>
+<div id="document">start</div>
+
+<ul>
+	<li><a href="#one">one</a></li>
+	<li><a href="#two">two</a></li>
+	<li><a href="#three">three</a></li>
+</ul>
+</body>
+</html>
