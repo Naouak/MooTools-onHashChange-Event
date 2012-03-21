@@ -17,11 +17,9 @@ provides: [Element.Events.hashchange]
 */
 Element.Events.hashchange = {
     onAdd: function () {
-    	alert('add');
         var hash = location.hash;
 
         var hashchange = function () {
-        	alert('change');
             if (hash == location.hash) return;
             else hash = location.hash;
 
